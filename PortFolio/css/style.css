@@ -1,0 +1,173 @@
+html, * {
+    transition: all 1s ease-out;
+    transform-origin: center;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+
+nav {
+    padding: 0 10rem 0px 10rem;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 1rem;
+}
+nav ul li a span {
+    padding: 0.5rem;
+}
+
+nav ul li a img {
+    
+    background-color: #009696;
+    width:2rem;
+    padding: 1rem;
+    position: relative;
+    top: 3rem;
+    left: 0;
+    right: 0;
+}
+
+
+
+#Enter {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+}
+
+#Enter > * {
+    padding: 3vh 0;
+}
+
+#Enter > img {
+    /* #00969689 */
+    width: 10vh;
+    opacity: 1;
+}
+
+.EnterText {
+    text-align: center;
+}
+
+.Enter-Arrow:hover > span {
+    transition: all 3s ease-out;
+    margin: 10vh 0;
+    position: relative;
+    transform: scale(7);
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+.Enter-Arrow > span {
+    margin: 1vw;
+    color: black;
+    transform: scale(2);
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 50
+}
+
+#container {
+    height: 200vh;
+}
+
+/* ======================== GLOBALE ======================== */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+  }
+  .flex-container-row-space-between {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+  }
+  .flex-items-flex-grow-1 {
+    flex-grow: 1;
+  }
+
+  .flex-items-flex-grow-2 {
+    flex-grow: 2;
+  }
+
+.flex-items {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+.stop-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
