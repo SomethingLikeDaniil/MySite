@@ -159,6 +159,17 @@ article:hover {
 article img {
     width: 100%;
 }
+#container h1 {
+    filter: blur(5px);
+    color: #0096963b;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin-top: 45vh;
+    font-size: 30vw;
+    left: -2vw;
+}
 
 article h2 {
 
