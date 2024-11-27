@@ -7,12 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', () => {
         let currentScroll = window.scrollY;
 
-        if (currentScroll > lastScrollTop && currentScroll > threshold) {
+        if (currentScroll > lastScrollTop) {
             navbar.style.top = "0";
         } else {
             navbar.style.top = "-60vh";
         }
-
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 });
